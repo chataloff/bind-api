@@ -10,7 +10,6 @@ This project provides a DNS Management API built using Flask, which allows you t
 - [API Endpoints](#api-endpoints)
 - [Docker Setup](#docker-setup)
 - [Prometheus Monitoring](#prometheus-monitoring)
-- [License](#license)
 
 ## Requirements
 
