@@ -36,17 +36,18 @@ This project provides a DNS Management API built using Flask, which allows you t
 
 # API Endpoints
 
-# Add/Delete  Records
+1. Add Record
    ```bash
-   Sample CURL requests:
 
    Add Record:
    curl -X POST http://localhost:5000/add_record -H "Content-Type: application/json" -d '{"domain": "test.com", "type": "A", "name": "test", "value": "192.168.1.10"}'
-
-   Delete Record:
+ 
+2. Delete Record:
+   ```bash
    curl -X POST http://localhost:5000/delete_record -H "Content-Type: application/json" -d '{"domain": "test.com", "name": "test"}'
 
-   Check Record:
+3. Check Record:
+   ```bash
    curl -X POST http://localhost:5000/check_record -H "Content-Type: application/json" -d '{"domain": "test.com"}'
 
 
@@ -54,10 +55,10 @@ This project provides a DNS Management API built using Flask, which allows you t
 
 This project uses a Dockerfile to create a containerized environment. The base image is Ubuntu 24.04 LTS, and the following components are installed:
 
-    BIND9
-    Python 3 and pip
-    Flask
-    Prometheus Bind Exporter
+   - BIND9
+   - Python 3 and pip
+   - Flask
+   - Prometheus Bind Exporter
 
 # Prometheus Monitoring
 
