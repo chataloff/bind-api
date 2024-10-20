@@ -40,17 +40,18 @@ This project provides a DNS Management API built using Flask, which allows you t
    ```bash
    Sample CURL requests:
 
-Add Record:
-curl -X POST http://localhost:5000/add_record -H "Content-Type: application/json" -d '{"domain": "test.com", "type": "A", "name": "test", "value": "192.168.1.10"}'
+   Add Record:
+   curl -X POST http://localhost:5000/add_record -H "Content-Type: application/json" -d '{"domain": "test.com", "type": "A", "name": "test", "value": "192.168.1.10"}'
 
-Delete Record:
-curl -X POST http://localhost:5000/delete_record -H "Content-Type: application/json" -d '{"domain": "test.com", "name": "test"}'
+   Delete Record:
+   curl -X POST http://localhost:5000/delete_record -H "Content-Type: application/json" -d '{"domain": "test.com", "name": "test"}'
 
-Check Record:
-curl -X POST http://localhost:5000/check_record -H "Content-Type: application/json" -d '{"domain": "test.com"}'
+   Check Record:
+   curl -X POST http://localhost:5000/check_record -H "Content-Type: application/json" -d '{"domain": "test.com"}'
 
 
 ## Docker Setup
+
 This project uses a Dockerfile to create a containerized environment. The base image is Ubuntu 24.04 LTS, and the following components are installed:
 
     BIND9
@@ -59,4 +60,5 @@ This project uses a Dockerfile to create a containerized environment. The base i
     Prometheus Bind Exporter
 
 ## Prometheus Monitoring
+
 The Prometheus Bind Exporter is included to monitor BIND's performance metrics, running on port 9119. Configure your Prometheus instance to scrape these metrics.
