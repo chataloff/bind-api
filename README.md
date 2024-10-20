@@ -36,7 +36,7 @@ This project provides a DNS Management API built using Flask, which allows you t
 2. Use the API to manage DNS records via curl or any HTTP client.
 
 ## API Endpoints
-### Add/Delete  Records
+## Add/Delete  Records
    ```bash
    Sample CURL requests:
 
