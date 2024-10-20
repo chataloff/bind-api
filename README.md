@@ -34,9 +34,9 @@ This project provides a DNS Management API built using Flask, which allows you t
    docker run -d -p 5000:5000 -p 53:53/udp -p 53:53/tcp --name dns-api dns-management-api
 2. Use the API to manage DNS records via curl or any HTTP client.
 
-## API Endpoints
+# API Endpoints
 
-### Add/Delete  Records
+# Add/Delete  Records
    ```bash
    Sample CURL requests:
 
@@ -50,7 +50,7 @@ This project provides a DNS Management API built using Flask, which allows you t
    curl -X POST http://localhost:5000/check_record -H "Content-Type: application/json" -d '{"domain": "test.com"}'
 
 
-## Docker Setup
+# Docker Setup
 
 This project uses a Dockerfile to create a containerized environment. The base image is Ubuntu 24.04 LTS, and the following components are installed:
 
@@ -59,6 +59,6 @@ This project uses a Dockerfile to create a containerized environment. The base i
     Flask
     Prometheus Bind Exporter
 
-## Prometheus Monitoring
+# Prometheus Monitoring
 
 The Prometheus Bind Exporter is included to monitor BIND's performance metrics, running on port 9119. Configure your Prometheus instance to scrape these metrics.
